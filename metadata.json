@@ -1,0 +1,6 @@
+{
+  "name": "Somogy Megyei Rendőr-főkapitányság Bűnmegelőzés",
+  "description": "Interaktív bűnmegelőzési szerencsekerék és kvízjáték gyerekeknek és felnőtteknek a Somogy Megyei Rendőr-főkapitányság megbízásából.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
