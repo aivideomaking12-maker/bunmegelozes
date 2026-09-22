@@ -23,7 +23,7 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
           <img
             src="/logo.png"
             alt="Rendőrségi Logó"
-            className="w-60 h-60 sm:w-72 sm:h-72 object-contain filter drop-shadow-md hover:scale-105 transition-transform"
+            className="w-60 h-60 sm:w-72 sm:h-72 object-contain filter drop-shadow-md hover:scale-80 transition-transform"
             onError={(e) => {
               // Fallback if custom file not found
               const target = e.currentTarget;
