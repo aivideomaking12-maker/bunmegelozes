@@ -11,19 +11,19 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
   onSelectRole,
 }) => {
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 py-6 flex flex-col items-center justify-center min-h-[calc(100vh-100px)] z-10 relative">
+    <div className="w-full max-w-4xl mx-auto px-4 py-4 flex flex-col items-center justify-center min-h-[calc(100vh-100px)] z-10 relative">
       {/* Title & Police Subtitle with customizable logo */}
       <motion.div
         initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-6 sm:mb-8 max-w-3xl flex flex-col items-center"
+        className="text-center mb-6 max-w-3xl flex flex-col items-center"
       >
         {/* Replaceable Logo from public folder (/logo.svg or /logo.png) */}
-        <div className="mb-2 flex items-center justify-center">
+        <div className="mb-1 flex items-center justify-center">
           <img
             src="/logo.png"
             alt="Rendőrségi Logó"
-            className="w-24 h-24 sm:w-32 sm:h-32 object-contain filter drop-shadow-md hover:scale-105 transition-transform"
+            className="w-36 h-36 sm:w-44 sm:h-44 object-contain filter drop-shadow-md hover:scale-105 transition-transform"
             onError={(e) => {
               const target = e.currentTarget;
               target.style.display = 'none';
