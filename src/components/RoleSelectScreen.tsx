@@ -23,7 +23,7 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
           <img
             src="/logo.png"
             alt="Rendőrségi Logó"
-            className="w-36 h-36 sm:w-44 sm:h-44 object-contain filter drop-shadow-md hover:scale-105 transition-transform"
+            className="w-60 h-60 sm:w-72 sm:h-72 object-contain filter drop-shadow-md hover:scale-105 transition-transform"
             onError={(e) => {
               const target = e.currentTarget;
               target.style.display = 'none';
