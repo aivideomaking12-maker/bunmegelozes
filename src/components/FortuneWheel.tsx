@@ -330,7 +330,7 @@ export const FortuneWheel: React.FC<FortuneWheelProps> = ({
             </svg>
           </div>
 
-         {/* Center Hub Button: Police Blue & Gold Design (Not black) */}
+{/* Center Hub Button: Police Blue & Gold Design (Not black) */}
           <div
             onClick={startSpin}
             id="wheel-center-hub-button"
@@ -340,8 +340,14 @@ export const FortuneWheel: React.FC<FortuneWheelProps> = ({
               <img 
                 src="/button_logo.png" 
                 alt="Pörgetés logó" 
-                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain drop-shadow-md"
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain drop-shadow-md mb-0.5"
               />
+              <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-white leading-tight drop-shadow">
+                PÖRGETÉS
+              </span>
+              <span className="text-[8px] sm:text-[9px] font-bold text-amber-200 tracking-tight">
+                ÉRINTSD MEG!
+              </span>
             </div>
           </div>
         </div>
