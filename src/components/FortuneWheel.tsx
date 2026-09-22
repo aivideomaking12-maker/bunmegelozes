@@ -330,20 +330,18 @@ export const FortuneWheel: React.FC<FortuneWheelProps> = ({
             </svg>
           </div>
 
-          {/* Center Hub Button: Police Blue & Gold Design (Not black) */}
+         {/* Center Hub Button: Police Blue & Gold Design (Not black) */}
           <div
             onClick={startSpin}
             id="wheel-center-hub-button"
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full bg-gradient-to-tr from-amber-400 via-amber-300 to-yellow-100 p-1.5 shadow-2xl flex items-center justify-center cursor-pointer hover:scale-105 active:scale-95 transition-transform z-10"
           >
-            <div className="w-full h-full rounded-full bg-gradient-to-b from-sky-600 to-blue-900 border-2 border-white/80 flex flex-col items-center justify-center p-1 text-center select-none shadow-inner">
-              <Shield className="w-7 h-7 sm:w-9 sm:h-9 text-amber-300 mb-0.5 fill-amber-300/30 filter drop-shadow" />
-              <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-white leading-tight drop-shadow">
-                PÖRGETÉS
-              </span>
-              <span className="text-[8px] sm:text-[9px] font-bold text-amber-200 tracking-tight">
-                ÉRINTSD MEG!
-              </span>
+            <div className="w-full h-full rounded-full bg-gradient-to-b from-sky-600 to-blue-900 border-2 border-white/80 flex flex-col items-center justify-center p-1 text-center select-none shadow-inner overflow-hidden">
+              <img 
+                src="/button_logo.png" 
+                alt="Pörgetés logó" 
+                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain drop-shadow-md"
+              />
             </div>
           </div>
         </div>
