@@ -21,7 +21,7 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
         {/* Replaceable Logo from public folder (/logo.svg or /logo.png) */}
         <div className="mb-4 flex items-center justify-center">
           <img
-            src="/logo.svg"
+            src="/logo.png"
             alt="Rendőrségi Logó"
             className="w-20 h-20 sm:w-24 sm:h-24 object-contain filter drop-shadow-md hover:scale-105 transition-transform"
             onError={(e) => {
