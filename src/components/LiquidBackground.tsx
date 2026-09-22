@@ -7,7 +7,7 @@ export const LiquidBackground: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700"
         style={{
-          backgroundImage: "url('/background.svg')",
+          backgroundImage: "url('/background.png')",
           backgroundColor: '#F0F9FF',
         }}
       />
