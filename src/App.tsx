@@ -292,9 +292,7 @@ export default function App() {
 
       {/* Cheerful Minimalist Footer */}
       <footer className="relative z-10 w-full py-2.5 px-4 text-center text-[11px] sm:text-xs text-slate-500 bg-white/40 backdrop-blur-sm border-t border-white/50">
-        <span>Somogy Vármegyei Rendőr-főkapitányság • Bűnmegelőzési Osztály • </span>
-        <span className="font-bold text-slate-700">112 Segélyhívó</span>
-        <span className="hidden sm:inline"> • KiberPajzs Oktatóprogram</span>
+        <span>Somogy Megyei Rendőr-főkapitányság • Bűnmegelőzési Osztály • Készítette: H. Valentin </span>
       </footer>
     </div>
   );
