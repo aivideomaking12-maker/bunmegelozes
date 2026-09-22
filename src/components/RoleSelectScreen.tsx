@@ -11,21 +11,20 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
   onSelectRole,
 }) => {
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-[calc(100vh-100px)] z-10 relative">
+    <div className="w-full max-w-4xl mx-auto px-4 py-6 flex flex-col items-center justify-center min-h-[calc(100vh-100px)] z-10 relative">
       {/* Title & Police Subtitle with customizable logo */}
       <motion.div
         initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-8 sm:mb-12 max-w-3xl flex flex-col items-center"
+        className="text-center mb-6 sm:mb-8 max-w-3xl flex flex-col items-center"
       >
         {/* Replaceable Logo from public folder (/logo.svg or /logo.png) */}
-        <div className="mb-4 flex items-center justify-center">
+        <div className="mb-2 flex items-center justify-center">
           <img
             src="/logo.png"
             alt="Rendőrségi Logó"
-            className="w-60 h-60 sm:w-72 sm:h-72 object-contain filter drop-shadow-md hover:scale-80 transition-transform"
+            className="w-24 h-24 sm:w-32 sm:h-32 object-contain filter drop-shadow-md hover:scale-105 transition-transform"
             onError={(e) => {
-              // Fallback if custom file not found
               const target = e.currentTarget;
               target.style.display = 'none';
             }}
@@ -38,7 +37,7 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
         </h1>
 
         {/* Bűnmegelőzési Szerencsekerék subtitle */}
-        <h2 className="text-xl sm:text-3xl font-extrabold text-sky-600 tracking-wide mb-4">
+        <h2 className="text-xl sm:text-3xl font-extrabold text-sky-600 tracking-wide mb-3">
           Bűnmegelőzési Szerencsekerék
         </h2>
 
@@ -71,7 +70,6 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
           onClick={() => onSelectRole('gyerek')}
           className="cursor-pointer rounded-3xl p-8 bg-white/80 backdrop-blur-xl border-2 border-white/90 hover:border-sky-400 shadow-xl shadow-sky-500/10 hover:shadow-2xl hover:shadow-sky-400/25 transition-colors flex flex-col items-center justify-center text-center group select-none"
         >
-          {/* Child Emoji - centered with dedicated height to prevent clipping and ensure identical vertical alignment */}
           <motion.div
             whileHover={{ scale: 1.12, rotate: [-1, 2, -1, 0] }}
             transition={{ type: 'spring', stiffness: 300, damping: 15 }}
@@ -108,7 +106,6 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
           onClick={() => onSelectRole('felnot')}
           className="cursor-pointer rounded-3xl p-8 bg-white/80 backdrop-blur-xl border-2 border-white/90 hover:border-indigo-400 shadow-xl shadow-indigo-500/10 hover:shadow-2xl hover:shadow-indigo-400/25 transition-colors flex flex-col items-center justify-center text-center group select-none"
         >
-          {/* Adult Emoji - identically centered and aligned */}
           <motion.div
             whileHover={{ scale: 1.12, rotate: [1, -2, 1, 0] }}
             transition={{ type: 'spring', stiffness: 300, damping: 15 }}
