@@ -340,7 +340,7 @@ export const FortuneWheel: React.FC<FortuneWheelProps> = ({
               <img 
                 src="/button_logo.png" 
                 alt="Pörgetés logó" 
-                className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain drop-shadow-md mb-0.5"
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain drop-shadow-md mb-0.5"
               />
               <span className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-white leading-tight drop-shadow">
                 PÖRGETÉS
