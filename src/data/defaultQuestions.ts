@@ -11,11 +11,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Egy ismeretlen weboldal azt írja: „Gratulálunk! Te nyertél egy vadiúj iPhone-t, csak kattints ide és add meg a címed!”. Mit teszel?',
     options: [
       'Azonnal rákattintok, nehogy lemaradjak róla!',
-      'Gyanakvó leszek: senki sem osztogat ingyen telefont, bezárom az oldalt és szólok a szüleimnek.',
       'Megadom a bankkártya adatokat, mert biztos csak a szállítási díjat kérik.',
+      'Gyanakvó leszek: senki sem osztogat ingyen telefont, bezárom az oldalt és szólok a szüleimnek.',
       'Elküldöm az összes barátomnak is, hogy ők is nyerjenek.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A túl szépnek tűnő online nyeremények szinte mindig adathalász csalások. Soha ne kattints gyanús felugró ablakokra!'
   },
   {
@@ -24,12 +24,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'konnyu',
     questionText: 'Játék közben egy ismeretlen játékos azt írja chaten, hogy ad neked ingyenes ritka skineket/kristályokat, ha megadod a jelszavad. Mit teszel?',
     options: [
-      'Megadom, mert nagyon szeretném azt a skint.',
       'Soha senkinek nem adom meg a jelszavam, azonnal letiltom és jelentem a játékost.',
+      'Megadom, mert nagyon szeretném azt a skint.',
       'Csak a felét árulom el a jelszavamnak.',
       'Megadom a telefonszámom és a lakcímem helyette.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A jelszavad olyan, mint a fogkeféd: senkivel sem osztod meg! A hivatalos adminok és játékfejlesztők sosem kérik el a jelszavadat.'
   },
   {
@@ -38,12 +38,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'konnyu',
     questionText: 'A nagymamád kapott egy SMS-t: „Csomagja érkezett, kattintson a linkre a kézbesítéshez”. Nem rendelt semmit. Mi a helyes lépés?',
     options: [
-      'Rákattintani a linkre és letölteni amit kér.',
-      'Figyelmeztetni a nagymamát: ez egy ismert csomagküldős csalás (adathalászat), törölje az SMS-t!',
       'Válaszolni az SMS-re a lakcímével.',
-      'Hívni a díjköteles emelt díjas számot az SMS-ben.'
+      'Hívni a díjköteles emelt díjas számot az SMS-ben.',
+      'Rákattintani a linkre és letölteni amit kér.',
+      'Figyelmeztetni a nagymamát: ez egy ismert csomagküldős csalás (adathalászat), törölje az SMS-t!'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A csomagküldő szolgálatok nevében küldött kéretlen linkek kártékony alkalmazást akarnak telepíteni a telefonra, amivel pénzt emelhetnek le.'
   },
   {
@@ -52,12 +52,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'konnyu',
     questionText: 'Mit jelent az „adathalászat” (phishing) az interneten?',
     options: [
-      'Amikor halas képeket töltünk le a tengeri állatokról.',
       'Amikor csalók hamis üzenetekkel vagy oldalakkal próbálják megszerezni a titkos adatainkat és jelszavainkat.',
+      'Amikor halas képeket töltünk le a tengeri állatokról.',
       'Egy népszerű horgász szimulátor játék.',
       'A lassú internetkapcsolat hivatalos neve.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Az adathalászat során a csalók hivatalos szervnek (bank, futárcég, közösségi oldal) adják ki magukat, hogy jelszavakat vagy banki adatokat csaljanak ki.'
   },
   {
@@ -66,9 +66,9 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'kozepes',
     questionText: 'Használt cikkeket adsz el a neten (pl. Vinted, Jófogás, Marketplace). Egy érdeklődő küld egy linket, ahol állítólag „jóvá kell hagynod a pénz fogadását a bankkártya adataiddal”. Mi ez?',
     options: [
-      'Teljesen normális banki átutalási eljárás.',
-      'Tipikus eladói csalás! Pénz fogadásához SOHA nem kell megadni a kártya lejárati idejét és a CVC/CVV kódját, sem belépni a netbankba.',
       'Csak a futárcég igazolása, nyugodtan kitöltheted.',
+      'Tipikus eladói csalás! Pénz fogadásához SOHA nem kell megadni a kártya lejárati idejét és a CVC/CVV kódját, sem belépni a netbankba.',
+      'Teljesen normális banki átutalási eljárás.',
       'A rendőrség biztonsági ellenőrzése.'
     ],
     correctIndex: 1,
@@ -80,12 +80,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'kozepes',
     questionText: 'Egy ismerősöd messengeren sürgős üzenetet küld: „Kérlek segíts, bajban vagyok, utalj gyorsan 30 ezer forintot erre a számra!”. Mi a legfontosabb lépés?',
     options: [
+      'Elküldeni a bankkártyád fotóját mindkét oldalról.',
       'Azonnal átutalni a pénzt, elvégre barát.',
-      'Felhívni őt telefonon vagy személyesen beszélni vele, mert gyakran feltörik a fiókokat a csalók.',
       'Továbbítani a kérést az összes többi közös barátnak.',
-      'Elküldeni a bankkártyád fotóját mindkét oldalról.'
+      'Felhívni őt telefonon vagy személyesen beszélni vele, mert gyakran feltörik a fiókokat a csalók.'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Gyakori módszer, hogy feltört profilokból a csalók pénzt kérnek a kontaktoktól. Mindig ellenőrizd más független csatornán (pl. közvetlen telefonhívással)!'
   },
   {
@@ -94,12 +94,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'kozepes',
     questionText: 'Miről ismerhető fel a legkönnyebben egy megbízhatatlan, hamis webáruház?',
     options: [
-      'Van rajta keresőmező és kosár gomb.',
       'Gyanúsan olcsó márkás árucikkek, magyartalan gépi fordítás, hiányzó céges elérhetőség (ÁSZF, székhely, adószám), és kizárólag előre fizetés lehetséges.',
+      'Van rajta keresőmező és kosár gomb.',
       'Színes a weboldal fejlécének a háttere.',
       'Lehet bankkártyával fizetni.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A hamis webshopok hihetetlen 80-90%-os akciókkal csábítanak, nincs valós céges adatuk és vevőszolgálatuk. Mindig ellenőrizd a webáruház megbízhatóságát!'
   },
   {
@@ -108,12 +108,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'kozepes',
     questionText: 'A „Banki biztonsági osztály” nevében hív valaki, és azt mondja, feltörték a számládat, ezért sürgősen telepítened kell az „AnyDesk” vagy „TeamViewer” alkalmazást a „védelemhez”. Mit teszel?',
     options: [
-      'Gyorsan feltelepítem és megadom neki a képernyőn látható kódot.',
-      'Azonnal leteszem a telefont! A bankok sosem kérik távoli hozzáférésű képernyőmegosztó program telepítését.',
       'Megadom a mobilbankos belépési kódomat, hogy ő maga elhárítsa a hibát.',
-      'Átutalom a pénzem az általa megadott „biztonsági számlára”.'
+      'Átutalom a pénzem az általa megadott „biztonsági számlára”.',
+      'Gyorsan feltelepítem és megadom neki a képernyőn látható kódot.',
+      'Azonnal leteszem a telefont! A bankok sosem kérik távoli hozzáférésű képernyőmegosztó program telepítését.'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A csalók távoli asztal elérést (pl. AnyDesk) kérve átveszik az uralmat a számítógép vagy telefon felett, és ellopják a pénzt. A bank sosem kér ilyet!'
   },
   {
@@ -122,9 +122,9 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'nehez',
     questionText: 'Mit jelent a „kriptovaluta- és befektetési csalás” (pig butchering / hamis brókerek)?',
     options: [
-      'Kriptopiacok legális felügyeleti vizsgálata az MNB által.',
-      'Hírességek (pl. miniszterelnök, üzletemberek) arcával reklámozott irreális hozamot ígérő kamu platformok, ahol a befizetett pénz sosem vehető fel.',
       'Egy digitális fizetőeszköz ingyenes bányászata.',
+      'Hírességek (pl. miniszterelnök, üzletemberek) arcával reklámozott irreális hozamot ígérő kamu platformok, ahol a befizetett pénz sosem vehető fel.',
+      'Kriptopiacok legális felügyeleti vizsgálata az MNB által.',
       'Pénzügyi applikációk automatikus szoftverfrissítése.'
     ],
     correctIndex: 1,
@@ -137,11 +137,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Mit jelent az „URL spoofing” vagy typosquatting az adathalászatban?',
     options: [
       'A weboldalak gyorsabb betöltését segítő szervertechnológia.',
-      'Csalók az eredeti banki/szolgáltatói webcímhez megtévesztésig hasonlító domaint regisztrálnak (pl. otpbamk.hu vagy otp-belepes.hu) a felhasználók becsapására.',
       'A számítógépes egeret gyorsító szoftver.',
+      'Csalók az eredeti banki/szolgáltatói webcímhez megtévesztésig hasonlító domaint regisztrálnak (pl. otpbamk.hu vagy otp-belepes.hu) a felhasználók becsapására.',
       'A böngészési előzmények titkosítása.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Mindig ellenőrizd a böngésző címsorában a pontos címet és a biztonságos protokollt! Egyetlen elgépelt betű hamis csaló oldalra vezethet.'
   },
   {
@@ -150,12 +150,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'nehez',
     questionText: 'Ha gyanús tranzakciót észlelsz vagy véletlenül megadtad a banki adataidat egy csaló oldalon, mi a helyes protokoll?',
     options: [
-      'Várni néhány napot, hátha nem történik semmi.',
       'Azonnal felhívni a saját bankod hivatalos ügyfélszolgálatát és letiltatni a bankkártyát/hozzáférést, majd feljelentést tenni a Rendőrségen.',
+      'Várni néhány napot, hátha nem történik semmi.',
       'Megkérdezni a közösségi médiában a kommentelőket.',
       'Újra megpróbálni belépni a csaló oldalra és kérni a törlést.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A gyors reakció kulcsfontosságú! Az azonnali banki tiltás megakadályozhatja az összeg levonását vagy átutalását, a rendőrségi bejelentés pedig segít a felderítésben.'
   },
 
@@ -170,10 +170,10 @@ export const DEFAULT_QUESTIONS: Question[] = [
     options: [
       '123456',
       'jelszo2024',
-      'K$9mP#z7!wL2@',
-      'a keresztneved és a születési éved'
+      'a keresztneved és a születési éved',
+      'K$9mP#z7!wL2@'
     ],
-    correctIndex: 2,
+    correctIndex: 3,
     explanation: 'Az erős jelszó legalább 12-14 karakteres, tartalmaz kis- és nagybetűket, számokat és speciális karaktereket, és nem tartalmaz személyes adatot.'
   },
   {
@@ -182,12 +182,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'konnyu',
     questionText: 'Szabad-e minden weboldalon és játékban ugyanazt a jelszót használni?',
     options: [
-      'Igen, mert így könnyebb megjegyezni és nem felejtem el.',
       'Nem, mert ha egyetlen oldal adatbázisát feltörik, a bűnözők az összes többi fiókodba is bejuthatnak!',
+      'Igen, mert így könnyebb megjegyezni és nem felejtem el.',
       'Igen, ha a jelszóban van legalább egy felkiáltójel.',
       'Csak akkor, ha a barátaid is azt használják.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A jelszó-újrafelhasználás óriási biztonsági kockázat. Minden fontos fiókhoz használj egyedi jelszót vagy megbízható jelszókezelőt!'
   },
   {
@@ -196,9 +196,9 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'konnyu',
     questionText: 'Az iskolai vagy könyvtári számítógépen bejelentkezel a levelezésedbe vagy közösségi oldaladra. Mit kell tenned, amikor felállsz a géptől?',
     options: [
-      'Csak simán becsukni a böngészőablakot.',
-      'Kijelentkezni a fiókból, törölni a bejelentkezési pipát és bezárni a böngészőt.',
       'Semmit, a gép automatikusan elfelejti magától.',
+      'Kijelentkezni a fiókból, törölni a bejelentkezési pipát és bezárni a böngészőt.',
+      'Csak simán becsukni a böngészőablakot.',
       'Kikapcsolni a monitort.'
     ],
     correctIndex: 1,
@@ -211,11 +211,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'A telefonod jelez, hogy elérhető egy új rendszerfrissítés (biztonsági frissítés). Mit érdemes tenned?',
     options: [
       'Soha ne frissíts, mert csak lassítja a telefont.',
-      'Frissítsd a telefont, mert a biztonsági frissítések kijavítják a veszélyes biztonsági réseket, amiket a vírusok kihasználhatnának.',
       'Várd meg, amíg eltelt legalább 3 év.',
+      'Frissítsd a telefont, mert a biztonsági frissítések kijavítják a veszélyes biztonsági réseket, amiket a vírusok kihasználhatnának.',
       'Töröld le a beállítások menüt.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A szoftver- és rendszerfrissítések nemcsak új funkciókat adnak, hanem a frissen felfedezett biztonsági réseket is befoltozzák.'
   },
   {
@@ -224,12 +224,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'kozepes',
     questionText: 'Mit jelent a „kétlépcsős azonosítás” (2FA / MFA)?',
     options: [
-      'Kétszer kell gyorsan beírnod ugyanazt a jelszót egymás után.',
       'A jelszavad mellett egy második igazoló tényező is szükséges (pl. telefonos kód, ujjlenyomat vagy hitelesítő applikáció).',
+      'Kétszer kell gyorsan beírnod ugyanazt a jelszót egymás után.',
       'Amikor két ember egyszerre játszik egy gépen.',
       'Amikor két számítógépes vírus harcol egymással.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A kétlépcsős azonosítás a leghatékonyabb védelem: még ha a jelszavad ki is szivárog, a támadó a második tényező (pl. SMS vagy hitelesítő app) nélkül nem tud belépni.'
   },
   {
@@ -239,11 +239,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Nyilvános helyen vagy (pl. pláza, gyorsétterem, vasútállomás) és találsz egy jelszó nélküli, ingyenes nyílt Wi-Fi hálózatot. Mire kell nagyon figyelni?',
     options: [
       'Bármit csinálhatsz rajta, a nyilvános hálózatok a legbiztonságosabbak.',
-      'Kerüld a banki belépést, a jelszavak megadását és a vásárlást nyílt hálózaton, mert a forgalmat a csalók lehallgathatják; inkább használj mobilinternetet vagy VPN-t.',
       'Nyílt Wi-Fi-re csak éjszaka szabad kapcsolódni.',
+      'Kerüld a banki belépést, a jelszavak megadását és a vásárlást nyílt hálózaton, mert a forgalmat a csalók lehallgathatják; inkább használj mobilinternetet vagy VPN-t.',
       'A nyílt Wi-Fi-n nem terjedhet vírus.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A titkosítás nélküli nyilvános Wi-Fi hálózatokon a csalók könnyen lehallgathatják az adatforgalmat, vagy kamu hálózatot hozhatnak létre az adatok ellopására.'
   },
   {
@@ -252,12 +252,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'kozepes',
     questionText: 'Mit nevezünk „zsarolóvírusnak” (ransomware)?',
     options: [
-      'Egy olyan programot, ami zenéket játszik le a háttérben.',
       'Egy kártékony szoftvert, amely titkosítja a számítógépen lévő fájlokat, képeket, és pénzt követel a feloldásukért.',
+      'Egy olyan programot, ami zenéket játszik le a háttérben.',
       'Egy ingyenes vírusirtó szoftvert.',
       'A merevlemez fizikai ventilátorának meghibásodását.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A zsarolóvírusok zárolják az adataidat és váltságdíjat követelnek. A rendőrség javaslata: soha ne fizess a bűnözőknek, és mindig készíts offline biztonsági másolatot a fontos fájljaidról!'
   },
   {
@@ -281,11 +281,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Mit jelent a „Social Engineering” (társadalmi manipuláció / pszichológiai megtévesztés) a kiberbűnözésben?',
     options: [
       'Közösségi média felületek programozása.',
-      'A támadó az emberi hiszékenységet, félelmet, segítőkészséget vagy sürgetést használja ki, hogy a célszemély maga adja ki a bizalmas adatokat vagy indítsa el a kártevőt.',
       'Robotok tervezése gyárakban.',
-      'Tudományos kutatás a digitális eszközök képernyőidejéről.'
+      'Tudományos kutatás a digitális eszközök képernyőidejéről.',
+      'A támadó az emberi hiszékenységet, félelmet, segítőkészséget vagy sürgetést használja ki, hogy a célszemély maga adja ki a bizalmas adatokat vagy indítsa el a kártevőt.'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A kiberbűnözők gyakran nem a bonyolult rendszereket törik fel, hanem az emberi tényezőt használják ki sürgetéssel vagy tekintélyszeméllyel való fenyegetéssel.'
   },
   {
@@ -309,11 +309,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Melyik a legbiztonságosabb módszer a fontos személyes és céges adatok mentésére?',
     options: [
       'Csak a számítógép Asztal (Desktop) mappájában hagyni a fájlokat.',
-      'A 3-2-1 biztonsági mentési szabály: legalább 3 példány, 2 különböző adathordozón, és 1 példány külön helyen (pl. titkosított felhőben vagy offline lecsatlakoztatott lemezen).',
       'Kinyomtatni minden fájlt fekete-fehérben.',
+      'A 3-2-1 biztonsági mentési szabály: legalább 3 példány, 2 különböző adathordozón, és 1 példány külön helyen (pl. titkosított felhőben vagy offline lecsatlakoztatott lemezen).',
       'Elküldeni mindent egy nyilvános fórumba.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A 3-2-1 szabály biztosítja, hogy hardverhiba, tűzeset vagy zsarolóvírus-fertőzés esetén is visszaállíthatók maradjanak az értékes adatok.'
   },
 
@@ -326,12 +326,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'konnyu',
     questionText: 'Milyen adatokat NEM szabad nyilvánosan kiírni a közösségi média profilodra (Instagram, TikTok, Facebook)?',
     options: [
-      'A kedvenc színedet és a kedvenc ételedet.',
       'A pontos lakcímedet, telefonszámodat, iskolád nevét és a napirendedet.',
+      'A kedvenc színedet és a kedvenc ételedet.',
       'A kedvenc focicsapatod nevét.',
       'Hogy szereted a fagyit.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A személyes adatok (lakcím, iskola, telefonszám) kiadása veszélybe sodorhat téged és a családodat. Tartsd privátban a profilodat!'
   },
   {
@@ -355,11 +355,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'A család elutazik nyaralni 2 hétre a tengerpartra. Mikor érdemes kitenni a nyaralós fotókat a közösségi médiába?',
     options: [
       'Azonnal a repülőtérről: „Üres a lakásunk 2 hétig, végre nyaralunk!”.',
-      'Csak azután, hogy épségben hazaértetek a nyaralásból.',
       'Minden nap pontos élő bejelentkezést tartani a lakás ürességéről.',
-      'Kitenni a házkulcsot és a kapukódot is a poszt mellé.'
+      'Kitenni a házkulcsot és a kapukódot is a poszt mellé.',
+      'Csak azután, hogy épségben hazaértetek a nyaralásból.'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A betörők figyelik a közösségi médiát! Ha valós időben kiírod, hogy hetekig üres a lakás, közvetlen célponttá teheted az otthonotokat.'
   },
   {
@@ -369,11 +369,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Készítettél egy vicces fotót az osztálytársadról a szünetben. Mikor töltheted fel az internetre?',
     options: [
       'Bármikor, hiszen te csináltad a képet.',
-      'Csak akkor, ha ő maga kifejezetten megengedte és beleegyezett a megosztásba!',
+      'Csak este 8 óra után.',
       'Akkor, ha sok lájkot fog kapni.',
-      'Csak este 8 óra után.'
+      'Csak akkor, ha ő maga kifejezetten megengedte és beleegyezett a megosztásba!'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Másokról képet megosztani csak az ő kifejezett engedélyükkel szabad. A gúnyos vagy engedély nélküli képek közzététele jogsértő és megbánthatja a másikat.'
   },
   {
@@ -382,12 +382,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'kozepes',
     questionText: 'Mit jelent a „digitális lábnyom” (digital footprint)?',
     options: [
-      'Egy lépésszámláló alkalmazás a telefonon.',
       'Minden olyan adat, bejegyzés, komment és fotó összessége, amit az interneten valaha közzétettél vagy rólad megosztottak.',
+      'Egy lépésszámláló alkalmazás a telefonon.',
       'Egy cipőmárka webáruháza.',
       'A tablet képernyőjén maradt ujjlenyomatok.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Ami egyszer felkerül a netre, az szinte örökre megmarad! Évek múlva akár továbbtanulásnál vagy munkahelyi jelentkezésnél is előkerülhet.'
   },
   {
@@ -397,11 +397,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Mi a legbiztonságosabb profilbeállítás a közösségi média fiókjaidon (Instagram, TikTok stb.)?',
     options: [
       'Teljesen nyilvános, hogy minél több ismeretlen lájkoló és követő legyen.',
-      'Privát profil, ahol te magad döntöd el és ellenőrzöd, hogy ki láthatja a posztjaidat és történeteidet.',
       'Minden követési kérés automatikus jóváhagyása.',
+      'Privát profil, ahol te magad döntöd el és ellenőrzöd, hogy ki láthatja a posztjaidat és történeteidet.',
       'A pontos élő GPS tartózkodási hely folyamatos engedélyezése minden posztnál.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A privát profil biztosítja, hogy csak azok az ismerőseid lássák a tartalmaidat, akiket a valós életből is ismersz és akikben megbízol.'
   },
   {
@@ -424,9 +424,9 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'kozepes',
     questionText: 'Mit jelent az „online kihívások” (TikTok challenges) veszélye?',
     options: [
-      'Nincs bennük veszély, minden kihívás szórakoztató.',
-      'Egyes felkapott kihívások súlyos testi sérülést, fulladást vagy életveszélyt okozhatnak; sose végezz olyan feladatot, ami károsíthatja az egészségedet!',
       'Csak az a veszélyes, ami 5 percnél tovább tart.',
+      'Egyes felkapott kihívások súlyos testi sérülést, fulladást vagy életveszélyt okozhatnak; sose végezz olyan feladatot, ami károsíthatja az egészségedet!',
+      'Nincs bennük veszély, minden kihívás szórakoztató.',
       'Csak felnőttek próbálhatják ki őket.'
     ],
     correctIndex: 1,
@@ -439,11 +439,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Mit tehetsz jogilag, ha valaki az engedélyed nélkül visszaél a fotóiddal vagy kamu profilt hozott létre a nevedben?',
     options: [
       'Semmit, az interneten mindent szabad.',
-      'Jelented a platform adminisztrátorainak, lemented a képernyőképeket bizonyítékként, és személyes adattal való visszaélés miatt a Rendőrséghez fordulhatsz.',
       'Bosszúból te is csinálsz róla egy kamu profilt.',
+      'Jelented a platform adminisztrátorainak, lemented a képernyőképeket bizonyítékként, és személyes adattal való visszaélés miatt a Rendőrséghez fordulhatsz.',
       'Törlöd az otthoni internet előfizetést.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A más nevével, adataival és képeivel való visszaélés büntetőjogi következményekkel jár. A bizonyítékok rögzítése és a hatósági bejelentés a törvényes út.'
   },
   {
@@ -452,12 +452,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'nehez',
     questionText: 'Mit jelent a „Sharenting” jelenség a digitális korban?',
     options: [
-      'Közös családi internetes bevásárlás.',
       'Amikor a szülők túlzott mértékben és a gyermek beleegyezése nélkül osztanak meg intim pillanatokat, fotókat a gyermekükről a közösségi oldalakon.',
+      'Közös családi internetes bevásárlás.',
       'Gyerekeknek szóló oktató játékok.',
       'Közös videójátékozás a szülőkkel.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A sharenting sértheti a gyermek személyiségi jogait és visszaélésekre (pl. pedofil hálózatok, zaklatás) adhat lehetőséget.'
   },
   {
@@ -466,12 +466,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'nehez',
     questionText: 'Melyik az a magyar államilag támogatott szervezet és segélyvonal, amely kifejezetten a gyermekek internetes jogsértéseinek eltávolításában segít?',
     options: [
-      'Nemzetközi Postaszolgálat',
-      'Biztonságosinternet Hotline és Kék Vonal Gyermekkrízis Alapítvány (116-111)',
+      'Magyar Nemzeti Bank',
       'Országos Meteorológiai Szolgálat',
-      'Magyar Nemzeti Bank'
+      'Biztonságosinternet Hotline és Kék Vonal Gyermekkrízis Alapítvány (116-111)',
+      'Nemzetközi Postaszolgálat'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A Kék Vonal (116-111) éjjel-nappal ingyenesen hívható lelki segélyvonal, a Biztonságosinternet Hotline pedig segít a jogellenes tartalmak és képek eltávolításában.'
   },
 
@@ -484,12 +484,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'konnyu',
     questionText: 'Egy buliban vagy játszótéren egy ismerős fiú színes cukorkának látszó bogyót vagy gyanús italt kínál, mondván: „kóstold meg, ettől leszel menő”. Mit teszel?',
     options: [
-      'Kipróbálom, mert nem akarom, hogy kinevessenek.',
       'Határozottan NEM-et mondok, eljövök onnan és szólok a szüleimnek vagy egy tanárnak!',
+      'Kipróbálom, mert nem akarom, hogy kinevessenek.',
       'Zsebre teszem és később megeszem.',
       'Odaadom a kistestvéremnek.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Az igazi bátorság az, amikor képes vagy nemet mondani a veszélyes dolgokra. Soha ne fogadj el ismeretlen eredetű szert vagy nyitott italt!'
   },
   {
@@ -513,11 +513,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Igaz-e, hogy az elektromos cigaretta („manórúd”, Elf Bar, vape) teljesen ártalmatlan és csak ízesített vízpára?',
     options: [
       'Igen, teljesen egészséges vitaminos gőz.',
-      'NEM IGAZ! Erős nikotinfüggőséget okoz, mérgező vegyi anyagokat és nehézfémeket tartalmaz, és a forgalmazása illegális.',
       'Csak a felnőtteknek káros, a gyerekeknek nem.',
-      'Segíti a sportteljesítményt.'
+      'Segíti a sportteljesítményt.',
+      'NEM IGAZ! Erős nikotinfüggőséget okoz, mérgező vegyi anyagokat és nehézfémeket tartalmaz, és a forgalmazása illegális.'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Az Elf Bar és az e-cigaretták nem vízpárát, hanem függőséget okozó nikotint és rákkeltő aeroszolt tartalmaznak, ráadásul súlyos tüdőkárosodást okozhatnak.'
   },
   {
@@ -526,12 +526,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'konnyu',
     questionText: 'Mit csinálsz, ha egy barátod a társaságban hirtelen rosszul lesz, szédül vagy eszméletét veszti gyanús szer fogyasztása után?',
     options: [
-      'Otthagyod a fűben és hazamész, hogy ne kerülj bajba.',
       'Azonnal segítséget kérsz: tárcsázod a 112-es segélyhívót vagy szólsz a legközelebbi felnőttnek!',
+      'Otthagyod a fűben és hazamész, hogy ne kerülj bajba.',
       'Lefotózod és kiteszed a közösségi médiára.',
       'Megvárod, amíg magától felébred.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'Minden másodperc számít! A mentők és a rendőrség életet menteni érkezik. Sose hagyd magára a bajba jutott társadat!'
   },
   {
@@ -555,11 +555,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Egy szórakozóhelyen kimentél a mosdóba, és az asztalon hagytad az üdítődet. Amikor visszamész, mit teszel vele?',
     options: [
       'Nyugodtan megiszom, hiszen az asztalon volt.',
-      'Nem iszom belőle többet, újat kérek, mert észrevétlenül bódító szert (pl. Gina / randevú-drogot) csempészhettek bele!',
       'Belekeverek egy kis vizet.',
-      'Megkínálom vele a legközelebbi idegent.'
+      'Megkínálom vele a legközelebbi idegent.',
+      'Nem iszom belőle többet, újat kérek, mert észrevétlenül bódító szert (pl. Gina / randevú-drogot) csempészhettek bele!'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A felügyelet nélkül hagyott pohárba másodpercek alatt kábító hatású szert tehetnek. Mindig tartsd szemmel a poharadat, vagy kérj újat zárt üvegben!'
   },
   {
@@ -583,11 +583,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Hogyan mondhatsz határozottan és menőn „NEM”-et, ha a társaság cigarettával vagy droggal kínál?',
     options: [
       'Sírva fakadok és bocsánatot kérek.',
-      'Egyenes testtartással, szemkontaktussal, magabiztosan: „Köszi, de én nem élek ilyesmivel / sportolok / nem az én műfajom”.',
       'Elfogadom, csak hogy ne cikizzenek.',
+      'Egyenes testtartással, szemkontaktussal, magabiztosan: „Köszi, de én nem élek ilyesmivel / sportolok / nem az én műfajom”.',
       'A földre dobom és ráugrok.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Az asszertív kommunikáció lényege a magabiztos, nyugodt határozottság. Azok a valódi barátok, akik tiszteletben tartják a döntésedet!'
   },
   {
@@ -597,11 +597,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Büntetendő-e Magyarországon a kábítószer tartása, fogyasztása vagy másoknak való átadása?',
     options: [
       'Nem, saját használatra minden legális.',
-      'IGEN! A Büntető Törvénykönyv szigorúan bünteti a kábítószer birtoklását, fogyasztását, átadását és a kereskedelmet is.',
       'Csak akkor büntetendő, ha a tévé bemondja.',
+      'IGEN! A Büntető Törvénykönyv szigorúan bünteti a kábítószer birtoklását, fogyasztását, átadását és a kereskedelmet is.',
       'Csak 30 éves kor felett büntetendő.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A magyar jogszabályok zéró toleranciát alkalmaznak: a kábítószer birtoklása és fogyasztása is bűncselekmény, ami büntetett előéletet és akár szabadságvesztést vonhat maga után.'
   },
   {
@@ -610,12 +610,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'nehez',
     questionText: 'Mit jelent az „elterelés” intézménye a magyar büntetőjogban fiatalkorúak vagy alkalmi fogyasztók esetében?',
     options: [
-      'Közúti forgalomelterelés útépítés miatt.',
       'A büntetőeljárás felfüggesztése mellett legalább 6 hónapos megelőző-felvilágosító vagy kezelési programban való kötelező részvétel.',
+      'Közúti forgalomelterelés útépítés miatt.',
       'Büntetés helyett ingyenes nyaralás.',
       'Iskolaváltásra való kötelezés.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A törvény lehetőséget ad az alkalmi fogyasztóknak, hogy kezelés és felvilágosítás útján elkerüljék a bírósági büntetést, ezzel esélyt kapva az egészséges életre.'
   },
   {
@@ -625,11 +625,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Milyen súlyos mentális és pszichés következményei lehetnek a marihuána és a szintetikus kannabinoidok korai használatának?',
     options: [
       'Jobb tanulmányi eredmények és memóriafejlődés.',
-      'Pánikrohamok, tartós motivációvesztés, memóriazavar és hajlam esetén skizofrénia vagy pszichózis kiváltása.',
       'Szemüveg elhagyásának képessége.',
-      'Kiváló zenei hallás kifejlődése.'
+      'Kiváló zenei hallás kifejlődése.',
+      'Pánikrohamok, tartós motivációvesztés, memóriazavar és hajlam esetén skizofrénia vagy pszichózis kiváltása.'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A fejlődésben lévő kamasz agyban a bódítószerek maradandó idegrendszeri károsodást okozhatnak és lappangó pszichiátriai betegségeket lobbanthatnak be.'
   },
 
@@ -657,11 +657,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Mit jelent a „cyberbullying” szó?',
     options: [
       'Egy népszerű sci-fi társasjáték.',
-      'Internetes zaklatás: amikor valakit a digitális térben ismétlődően bántanak, megaláznak, fenyegetnek vagy kirekesztenek.',
       'Egy új okostelefonos márka.',
+      'Internetes zaklatás: amikor valakit a digitális térben ismétlődően bántanak, megaláznak, fenyegetnek vagy kirekesztenek.',
       'Gyors gépelés a billentyűzeten.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A cyberbullying épp olyan fájdalmas, mint a fizikai bántás, sőt a nap 24 órájában elérheti az áldozatot. Sose bánts másokat a neten!'
   },
   {
@@ -671,11 +671,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Egy ismeretlen vagy haragos felhasználó fenyegető üzeneteket küld neked a neten. Mi az ELSŐ dolog, amit NEM szabad tenned?',
     options: [
       'Képernyőképet menteni a bizonyítékokról.',
-      'Visszafenyegetni és durván káromkodva vitatkozni vele.',
       'Szólni a szüleidnek.',
-      'Letiltani az illetőt.'
+      'Letiltani az illetőt.',
+      'Visszafenyegetni és durván káromkodva vitatkozni vele.'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A zaklatók pontosan az érzelmi reakcióra és a vitára vágynak. Ne menj bele a sárdobálásba: mentsd le a bizonyítékokat, tiltsd le, és szólj felnőttnek!'
   },
   {
@@ -684,12 +684,12 @@ export const DEFAULT_QUESTIONS: Question[] = [
     difficulty: 'konnyu',
     questionText: 'Mit jelent a képernyőkép (screenshot) mentése, ha zaklatnak az interneten?',
     options: [
-      'Hogy a képernyőt lefényképezve törlődik a zaklató profilja.',
       'Fontos bizonyítékot rögzítesz a dátummal, névvel és az üzenettel, ami segít a rendőrségnek és a tanároknak a kivizsgálásban.',
+      'Hogy a képernyőt lefényképezve törlődik a zaklató profilja.',
       'A képernyőkép elküldi a vírust a másik félnek.',
       'A telefon háttérképének megváltoztatása.'
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation: 'A zaklatók gyakran utólag letörlik a bántó üzeneteket. A mentett képernyőképek (screenshotok) perdöntő bizonyítékok!'
   },
   {
@@ -699,11 +699,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Mit jelent a „doxxing” kifejezés a kiberzaklatásban?',
     options: [
       'Online orvosi vizsgálat webkamerán.',
-      'Valakinek a személyes, titkos adatainak (pl. valódi neve, lakcíme, telefonszáma, iskolája) rosszindulatú nyilvánosságra hozatala a neten, hogy mások zaklassák.',
       'Videójátékbeli pontszerzés.',
+      'Valakinek a személyes, titkos adatainak (pl. valódi neve, lakcíme, telefonszáma, iskolája) rosszindulatú nyilvánosságra hozatala a neten, hogy mások zaklassák.',
       'A profilkép levédése szerzői joggal.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A doxxing veszélyes jogsértés, amely a valós fizikai biztonságot is fenyegeti. Soha ne hozz nyilvánosságra másokról személyes adatokat!'
   },
   {
@@ -713,11 +713,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Miért érzik magukat sokan bátrabbnak a neten bántó kommenteket írni, mint a valóságban?',
     options: [
       'Mert a billentyűzet erőt ad a kezüknek.',
-      'Az anonimitás hamis illúziója és a közvetlen szemkontaktus hiánya miatt (online diszgátlás), ám a tetteik a valóságban is bűncselekménynek számíthatnak.',
       'Mert az interneten nincsenek törvények.',
-      'Mert a monitor elnyeli a haragot.'
+      'Mert a monitor elnyeli a haragot.',
+      'Az anonimitás hamis illúziója és a közvetlen szemkontaktus hiánya miatt (online diszgátlás), ám a tetteik a valóságban is bűncselekménynek számíthatnak.'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Sokan azt hiszik, hogy egy kamu profil mögé bújva bármit megtehetnek. A rendőrség és a hatóságok azonban az IP-cím alapján azonosítani tudják az elkövetőket!'
   },
   {
@@ -755,11 +755,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Melyik bűncselekményt követi el az, aki nagy nyilvánosság előtt valótlan, becsület csorbítására alkalmas tényt állít vagy híresztel valakiről?',
     options: [
       'Közlekedési szabálysértést.',
-      'Rágalmazást vagy becsületsértést (Btk. 226. § / 227. §).',
       'Szerzői jogok megsértését.',
+      'Rágalmazást vagy becsületsértést (Btk. 226. § / 227. §).',
       'Katasztrófavédelmi mulasztást.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A netes pletykák, hazugságok terjesztése nem játék: a Büntető Törvénykönyv alapján rágalmazásért és becsületsértésért büntetőjogi felelősségre vonás jár!'
   },
   {
@@ -769,11 +769,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Milyen jogi felelőssége van egy 14. életévét betöltött fiatalkorúnak online zaklatás, fenyegetés esetén?',
     options: [
       'Semmilyen felelőssége sincs 18 éves koráig.',
-      'A magyar törvények szerint 14 éves kortól (egyes súlyos bűncselekményeknél 12 évtől) büntethetővé válik, és bíróság elé állítható.',
       'Csak intőt kaphat a szüleitől.',
-      'Csak a telefonját tilthatják le 1 hétre.'
+      'Csak a telefonját tilthatják le 1 hétre.',
+      'A magyar törvények szerint 14 éves kortól (egyes súlyos bűncselekményeknél 12 évtől) büntethetővé válik, és bíróság elé állítható.'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: '14 éves kortól a fiatalok büntetőjogilag felelősségre vonhatók! A zaklatás miatti eljárás, próbára bocsátás vagy javítóintézeti nevelés a jövőjüket is tönkreteheti.'
   },
   {
@@ -783,11 +783,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Mit jelent a „flaming” és a „trolling” a netes fórumokon?',
     options: [
       'Tűzvédelmi oktatás és horgászat.',
-      'Szándékos provokáció, gyűlöletkeltés és agresszív indulatkeltés azzal a céllal, hogy felbosszantsák a többieket és tönkretegyék a beszélgetést.',
       'Hasznos tanácsok megosztása a házi feladathoz.',
-      'Fotószerkesztési stílusirányzat.'
+      'Fotószerkesztési stílusirányzat.',
+      'Szándékos provokáció, gyűlöletkeltés és agresszív indulatkeltés azzal a céllal, hogy felbosszantsák a többieket és tönkretegyék a beszélgetést.'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A netes trollok a haragodból táplálkoznak. Az aranyszabály: „Don\'t feed the troll!” – ne válaszolj nekik, jelentsd és tiltsd le őket!'
   },
 
@@ -801,11 +801,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Mi az Egységes Európai Segélyhívó telefonszám Magyarországon, amit vészhelyzetben díjmentesen hívhatsz?',
     options: [
       '911',
-      '112',
       '123',
+      '112',
       '999'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A 112 a nap 24 órájában ingyenesen hívható bármilyen telefonról (akár SIM kártya nélkül is), ha rendőrre, mentőre vagy tűzoltóra van szükség!'
   },
   {
@@ -815,11 +815,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Szabad-e a 112-es segélyhívót viccből vagy unalomból felhívni?',
     options: [
       'Igen, ha utána gyorsan leteszed a kagylót.',
-      'SZIGORÚAN TILOS! A kamu hívások leterhelik a vonalat, miközben valaki valóban életveszélyben van, ráadásul súlyos szabálysértési bírsággal jár!',
       'Csak délután szabad viccelődni.',
-      'Igen, ha a barátaiddal vagy.'
+      'Igen, ha a barátaiddal vagy.',
+      'SZIGORÚAN TILOS! A kamu hívások leterhelik a vonalat, miközben valaki valóban életveszélyben van, ráadásul súlyos szabálysértési bírsággal jár!'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'A segélyhívóval szórakozni tilos és büntetendő! Amíg az operátor egy viccelődővel beszél, más ember élete múlhat a várakozáson.'
   },
   {
@@ -829,11 +829,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Hogyan előzheted meg legbiztosabban, hogy ellopják a kerékpárodat a boltnál vagy az iskolánál?',
     options: [
       'Csak letámasztod a falhoz, úgysem viszi el senki.',
-      'Egy masszív (pl. U-lakattal vagy vastag lánccal) a vázat és a kereket egy stabil, fix tárgyhoz (pl. biciklitárolóhoz) rögzíted.',
       'Egy vékony madzaggal megkötöd a kormányt.',
+      'Egy masszív (pl. U-lakattal vagy vastag lánccal) a vázat és a kereket egy stabil, fix tárgyhoz (pl. biciklitárolóhoz) rögzíted.',
       'Ráírod egy papírra, hogy „Kérlek ne lopd el!”.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A vékony sodronyzárakat másodpercek alatt elcsípik a tolvajok. Használj minőségi U-lakatot és rögzítsd szilárd tereptárgyhoz a biciklit!'
   },
   {
@@ -857,11 +857,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Egyedül vagy otthon, és becsönget egy idegen, aki azt mondja, hogy a vízművektől/gázművektől jött leolvasni az órát. Mit teszel?',
     options: [
       'Azonnal kinyitod az ajtót és beengeded a lakásba.',
-      'Nem nyitsz ajtót idegennek! Zárt ajtón keresztül mondod, hogy a szüleid nincsenek otthon, és jöjjön vissza később, miközben felhívod a szüleidet.',
       'Megmutatod neki, hol tartjátok a családi spórolt pénzt.',
+      'Nem nyitsz ajtót idegennek! Zárt ajtón keresztül mondod, hogy a szüleid nincsenek otthon, és jöjjön vissza később, miközben felhívod a szüleidet.',
       'Elmész vele a pincébe.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'Soha ne engedj be idegent a lakásba, bármilyen hivatalosnak is mondja magát! A valódi szolgáltatók előre értesítést küldenek a felnőtteknek.'
   },
   {
@@ -885,11 +885,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Mit kell elmondanod legelőször, amikor felhívod a 112-es segélyhívót vészhelyzetben?',
     options: [
       'A kedvenc zenédet és az időjárást.',
-      'PONTOSAN HOL történt a baj (város, utca, házszám, tájékozódási pont), MI történt, és HÁNY sérült van.',
       'Hogy milyen jegyet kaptál ma az iskolában.',
+      'PONTOSAN HOL történt a baj (város, utca, házszám, tájékozódási pont), MI történt, és HÁNY sérült van.',
       'A telefonszámlád egyenlegét.'
     ],
-    correctIndex: 1,
+    correctIndex: 2,
     explanation: 'A segélyhívás alapszabálya: a HELYSZÍN a legfontosabb! Ha a vonal megszakadna, a mentők/rendőrök csak akkor tudnak indulni, ha tudják, hova kell menniük.'
   },
   {
@@ -927,11 +927,11 @@ export const DEFAULT_QUESTIONS: Question[] = [
     questionText: 'Melyik hatóság felelős az áldozatsegítésért Magyarországon, ha valakit bűncselekmény károsultjaként anyagi vagy lelki kár ért?',
     options: [
       'Az Állami Számvevőszék.',
-      'Az Igazságügyi Minisztérium Áldozatsegítő Szolgálata és Központjai (06-80-225-225 ingyenes Áldozatsegítő Vonal).',
       'A Fogyasztóvédelmi Főfelügyelőség.',
-      'A Nemzeti Média- és Hírközlési Hatóság.'
+      'A Nemzeti Média- és Hírközlési Hatóság.',
+      'Az Igazságügyi Minisztérium Áldozatsegítő Szolgálata és Központjai (06-80-225-225 ingyenes Áldozatsegítő Vonal).'
     ],
-    correctIndex: 1,
+    correctIndex: 3,
     explanation: 'Az Áldozatsegítő Központok ingyenes jogi, pszichológiai és krízishelyzet esetén azonnali pénzügyi segélyt nyújtanak a bűncselekmények áldozatainak.'
   },
   {
