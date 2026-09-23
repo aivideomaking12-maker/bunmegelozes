@@ -33,7 +33,7 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
 
 {/* Bűnmegelőzési Szerencsekerék subtitle */}
 <h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-white tracking-tighter drop-shadow-[0_5px_10px_rgba(0,0,0,0.25)] mb-2 uppercase">
-  "Bűnmegelőzési" <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">Szerencsekerék</span>
+  Bűnmegelőzési <span className="text-yellow-300">Szerencsekerék</span>
 </h2>
         {/* Catchy Slogan */}
         <div className="inline-flex items-center gap-2 px-5 py-2 rounded-2xl bg-amber-50/90 border border-amber-300/80 text-amber-900 text-sm sm:text-base font-bold shadow-sm">
