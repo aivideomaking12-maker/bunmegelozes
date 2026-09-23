@@ -23,7 +23,7 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
           <img
             src="/logo.png"
             alt="Rendőrségi Logó"
-            className="w-60 h-60 sm:w-72 sm:h-72 object-contain filter drop-shadow-md hover:scale-105 transition-transform"
+            className="w-30 h-30 sm:w-36 sm:h-36 object-contain filter drop-shadow-md hover:scale-105 transition-transform"
             onError={(e) => {
               const target = e.currentTarget;
               target.style.display = 'none';
@@ -32,15 +32,14 @@ export const RoleSelectScreen: React.FC<RoleSelectScreenProps> = ({
         </div>
 
         {/* Somogy Megyei Rendőrkapitányság title */}
-        <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-800 tracking-tight leading-tight mb-2 drop-shadow-sm">
-          Somogy Megyei Rendőr-főkapitányság
+        <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-1200 tracking-tight leading-tight mb-2 drop-shadow-sm">
+          Somogy Vármegyei Rendőr-főkapitányság
         </h1>
 
-        {/* Bűnmegelőzési Szerencsekerék subtitle */}
-        <h2 className="text-xl sm:text-3xl font-extrabold text-sky-600 tracking-wide mb-3">
-          Bűnmegelőzési Szerencsekerék
-        </h2>
-
+{/* Bűnmegelőzési Szerencsekerék subtitle */}
+<h2 className="text-5xl sm:text-6xl md:text-7xl font-black text-white tracking-tighter drop-shadow-[0_5px_10px_rgba(0,0,0,0.25)] mb-2 uppercase">
+  "Bűnmegelőzési" <span className="text-yellow-300">Szerencsekerék</span>
+</h2>
         {/* Catchy Slogan */}
         <div className="inline-flex items-center gap-2 px-5 py-2 rounded-2xl bg-amber-50/90 border border-amber-300/80 text-amber-900 text-sm sm:text-base font-bold shadow-sm">
           <Sparkles className="w-4 h-4 text-amber-500 flex-shrink-0" />
